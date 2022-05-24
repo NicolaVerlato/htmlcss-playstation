@@ -235,9 +235,6 @@ header .ms_btn{
     width: 115px;
     font-size: 15px;
 }
-#esplora .ms_card img{
-    width: 100%;
-}
 
 /* SMALL */
 @media screen and (min-width: 576px){
@@ -256,7 +253,7 @@ header .ms_btn{
     .playstation-bottom .descrizione{
         display: block;
     } 
-    .ms_card img{
+    #playstation .ms_card img{
         width: 50%;
         padding-bottom: 15px;
     }
