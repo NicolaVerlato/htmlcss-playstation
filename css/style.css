@@ -111,10 +111,8 @@ header .ms_btn{
     background-image: url(../img/jumbo-bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: white;
-    height: 675px;
-    display: flex;
-    align-items: flex-end;
 }
 #ms_jumbotron .ms_btn{
     width: 115px;
@@ -125,6 +123,7 @@ header .ms_btn{
 }
 #ms_jumbotron .jumbo-content{
     padding-bottom: 50px;
+    padding-top: 350px;
 }
 #ms_jumbotron h2{
     padding-bottom: 20px;
@@ -183,6 +182,28 @@ header .ms_btn{
     height: 100%;
 }
 
+/* takes two */
+#takes-two{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+.banner-content{
+    padding: 50px 0;
+}
+.banner-content img{
+    width: 310px;
+    padding-bottom: 20px;
+}
+#takes-two .ms_btn{
+    width: 115px;
+}
+
 /* SMALL */
 @media screen and (min-width: 576px){
     #ms_jumbotron img{
@@ -203,6 +224,11 @@ header .ms_btn{
         width: 50%;
         padding-bottom: 15px;
     }
+
+    /* takes two */
+    .banner-content img{
+        width: 390px;
+    }
 }
 /* DESKTOP */
 @media screen and (min-width: 992px){
@@ -216,11 +242,20 @@ header .ms_btn{
     .burger{
         display: none;
     }
+
     /* jumbotron */
     #ms_jumbotron .jumbo-content{
         width: 40%;
     }
     #ms_jumbotron img{
         width: 220px;
+    }
+
+    /* takes two */
+    .banner-content{
+        width: 35%;
+    }
+    .banner-content img{
+        width: 250px;
     }
 }
