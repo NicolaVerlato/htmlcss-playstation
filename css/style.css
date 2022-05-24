@@ -29,12 +29,19 @@ ul{
     background-color: #cd3d10;
     color: white;
 }
+.btn-blue{
+    background-color: #2c64e6;
+    color: white;
+}
 a{
     text-decoration: none;
     color: inherit;
 }
 h2{
     font-size: 35px;
+}
+.blue{
+    color: #0070d0;
 }
 
 /* HEADER */
@@ -125,6 +132,57 @@ header .ms_btn{
 #ms_jumbotron .text{
     font-size: 15px;
 }
+
+/* games */
+#games{
+    margin-top: 40px;
+}
+#games img{
+    border-radius: 20px;
+}
+#games .bordo img{
+    border: 2px solid #0070d0;
+    padding: 3px;
+}
+
+/* play 5 */
+#playstation{
+    margin-top: 100px;
+}
+.playstation-top{
+    text-align: center;
+}
+.playstation-center{
+    margin-top: 70px;
+}
+.playstation-bottom{
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.playstation-center .ms_btn{
+    width: 180px;
+    font-size: 15px;
+}
+#playstation .subtitle{
+    color: rgba(0, 0, 0, 0.5);
+}
+#playstation h2{
+    margin-bottom: 25px;
+    font-size: 34px;
+}
+.playstation-bottom .bordo{
+    border-bottom: 2px solid #0070d0;
+    filter: opacity(100%);
+}
+.playstation-bottom .descrizione{
+    display: none;
+}
+.ms_card{
+    text-align: center;
+    filter: opacity(50%);
+    height: 100%;
+}
+
 /* SMALL */
 @media screen and (min-width: 576px){
     #ms_jumbotron img{
@@ -135,6 +193,15 @@ header .ms_btn{
 @media screen and (min-width: 768px){
     #ms_jumbotron img{
         width: 350px;
+    }
+    
+    /* plsy 5 */
+    .playstation-bottom .descrizione{
+        display: block;
+    } 
+    .ms_card img{
+        width: 50%;
+        padding-bottom: 15px;
     }
 }
 /* DESKTOP */
