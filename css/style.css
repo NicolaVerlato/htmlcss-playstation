@@ -16,18 +16,25 @@ ul{
     padding: 0;
 }
 .ms_btn{
-    width: 80px;
     line-height: 36px;
     text-align: center;
     border-radius: 20px;
+    display: inline-block;
 }
 .btn-black{
     background-color: #363636;
     color: white;
 }
+.btn-orange{
+    background-color: #cd3d10;
+    color: white;
+}
 a{
     text-decoration: none;
     color: inherit;
+}
+h2{
+    font-size: 35px;
 }
 
 /* HEADER */
@@ -37,6 +44,9 @@ header{
     right: 0;
     z-index: 10;
     width: 100%;
+}
+header .ms_btn{
+    width: 80px;
 }
 /* header-top */
 .header-top{
@@ -56,6 +66,7 @@ header{
     margin: 0 auto;
     padding: 10px 15px;
     align-items: center;
+    background-color: white;
 }
 .header-left{
     display: flex;
@@ -86,6 +97,47 @@ header{
     font-size: 20px;
 }
 
+/* MAIN */
+/* jumbotron */
+#ms_jumbotron{
+    margin-top: 94px;
+    background-image: url(../img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 675px;
+    display: flex;
+    align-items: flex-end;
+}
+#ms_jumbotron .ms_btn{
+    width: 115px;
+}
+#ms_jumbotron img{
+    width: 240px;
+    padding-bottom: 35px;
+}
+#ms_jumbotron .jumbo-content{
+    padding-bottom: 50px;
+}
+#ms_jumbotron h2{
+    padding-bottom: 20px;
+}
+#ms_jumbotron .text{
+    font-size: 15px;
+}
+/* SMALL */
+@media screen and (min-width: 576px){
+    #ms_jumbotron img{
+        width: 280px;
+    }
+}
+/* TABLET */
+@media screen and (min-width: 768px){
+    #ms_jumbotron img{
+        width: 350px;
+    }
+}
+/* DESKTOP */
 @media screen and (min-width: 992px){
     /* header bottom */
     .header-list-left{
@@ -96,5 +148,12 @@ header{
     }
     .burger{
         display: none;
+    }
+    /* jumbotron */
+    #ms_jumbotron .jumbo-content{
+        width: 40%;
+    }
+    #ms_jumbotron img{
+        width: 220px;
     }
 }
