@@ -6,7 +6,39 @@ header{
     font-family: Helvetica, arial, sans-serif;
 }
 
+/* COMMON */
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ms_btn{
+    width: 80px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 20px;
+}
+.btn-black{
+    background-color: #363636;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+}
+/* header-top */
 .header-top{
     background-color: black;
     text-align: right;
@@ -14,4 +46,55 @@ header{
 .header-top img{
     width: 100px;
     padding: 10px;
+}
+
+/* header bottom */
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+}
+.logo{
+    padding-right: 10px;
+}
+.header-bottom ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.header-bottom li{
+    padding: 0 10px;
+}
+.header-list-left, .header-list-right{
+    display: none;
+}
+.header-list-left img, 
+.header-list-right img{
+    width: 10px;
+    display: inline-block;
+}
+.lens img{
+    width: 22px;
+}
+.burger i{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 992px){
+    /* header bottom */
+    .header-list-left{
+        display: block;
+    }
+    .header-list-right{
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
 }
