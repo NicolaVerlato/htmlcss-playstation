@@ -176,7 +176,7 @@ header .ms_btn{
 .playstation-bottom .descrizione{
     display: none;
 }
-.ms_card{
+#playstation .ms_card{
     text-align: center;
     filter: opacity(50%);
     height: 100%;
@@ -191,7 +191,6 @@ header .ms_btn{
     color: white;
     display: flex;
     align-items: center;
-    background-color: aqua;
 }
 .banner-content{
     padding: 50px 0;
@@ -204,19 +203,56 @@ header .ms_btn{
     width: 115px;
 }
 
+/* new exits */
+#new-exits{
+    background-color: #1f1f1f;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+#new-exits img{
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+#new-exits .subtitle{
+    font-size: 20px;
+}
+
+/* esplora */
+#esplora{
+    padding: 70px 0;
+}
+.esplora-top{
+    padding-bottom: 40px;
+}
+#esplora .text_center{
+    text-align: center;
+}
+#esplora .subtitle{
+    color: rgba(0, 0, 0, 0.5);
+}
+#esplora .ms_btn{
+    width: 115px;
+    font-size: 15px;
+}
+#esplora .ms_card img{
+    width: 100%;
+}
+
 /* SMALL */
 @media screen and (min-width: 576px){
     #ms_jumbotron img{
         width: 280px;
     }
 }
+
 /* TABLET */
 @media screen and (min-width: 768px){
     #ms_jumbotron img{
         width: 350px;
     }
     
-    /* plsy 5 */
+    /* play 5 */
     .playstation-bottom .descrizione{
         display: block;
     } 
@@ -230,6 +266,7 @@ header .ms_btn{
         width: 390px;
     }
 }
+
 /* DESKTOP */
 @media screen and (min-width: 992px){
     /* header bottom */
