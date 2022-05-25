@@ -51,6 +51,10 @@ h2{
 .blue{
     color: #0070d0;
 }
+main i{
+    font-size: 10px;
+    vertical-align: text-top;
+}
 
 /* HEADER */
 header{
@@ -138,11 +142,12 @@ header .ms_btn{
 }
 #ms_jumbotron .text{
     font-size: 15px;
+    margin-bottom: 25px;
 }
 
 /* games */
 #games{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 #games img{
     border-radius: 20px;
@@ -154,7 +159,7 @@ header .ms_btn{
 
 /* play 5 */
 #playstation{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .playstation-top{
     text-align: center;
@@ -171,15 +176,12 @@ header .ms_btn{
     font-size: 15px;
 }
 #playstation .subtitle{
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: grey;
 }
 #playstation h2{
     margin-bottom: 25px;
     font-size: 34px;
-}
-.playstation-bottom .bordo{
-    border-bottom: 2px solid #0070d0;
-    filter: opacity(100%);
 }
 .playstation-bottom .descrizione{
     display: none;
@@ -187,6 +189,11 @@ header .ms_btn{
 #playstation .ms_card{
     text-align: center;
     filter: opacity(50%);
+    height: 100%;
+}
+.playstation-bottom .bordo{
+    text-align: center;
+    border-bottom: 2px solid #0070d0;
     height: 100%;
 }
 
@@ -203,12 +210,16 @@ header .ms_btn{
 .banner-content{
     padding: 50px 0;
 }
+#takes-two h2{
+    margin-bottom: 30px;
+}
 .banner-content img{
     width: 310px;
     padding-bottom: 20px;
 }
 #takes-two .ms_btn{
     width: 115px;
+    margin-top: 15px;
 }
 
 /* new exits */
@@ -218,6 +229,9 @@ header .ms_btn{
     padding-top: 30px;
     padding-bottom: 70px;
 }
+#new-exits h2{
+    font-size: 27px;
+}
 #new-exits img{
     border-radius: 20px;
     padding-bottom: 10px;
@@ -225,19 +239,35 @@ header .ms_btn{
 #new-exits .subtitle{
     font-size: 20px;
 }
+#new-exits .descrizione{
+    font-size: 15px;
+}
 
 /* esplora */
 #esplora{
-    padding: 70px 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 .esplora-top{
     padding-bottom: 40px;
 }
+.esplora-top h2 i{
+    font-size: 14px;
+    vertical-align: super;
+}
+.esplora-top h2{
+    padding-bottom: 20px;
+}
 #esplora .text_center{
     text-align: center;
 }
+#esplora h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
 #esplora .subtitle{
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: grey;
 }
 #esplora .ms_btn{
     width: 115px;
@@ -253,12 +283,27 @@ header .ms_btn{
     width: 300px;
 }
 #ps-plus .text{
+    font-size: 15px;
     padding-top: 40px;
     padding-bottom: 25px;
 }
 #ps-plus .ms_btn{
     width: 195px;
     font-size: 15px;
+}
+
+/* discount */
+#discount{
+    padding: 60px 0;
+}
+.discount-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.discount-text .subtitle{
+    font-size: 18px;
+    color: grey;
+    margin-top: 30px;
 }
 
 /* ps-now */
@@ -271,6 +316,7 @@ header .ms_btn{
     width: 300px;
 }
 #ps-now .text{
+    font-size: 15px;
     padding-top: 40px;
     padding-bottom: 25px;
 }
@@ -279,22 +325,9 @@ header .ms_btn{
     font-size: 15px;
 }
 
-/* discount */
-#discount{
-    padding: 70px 0;
-}
-.discount-text{
-    text-align: center;
-    margin-bottom: 50px;
-}
-.discount-text .subtitle{
-    color: rgba(0, 0, 0, 0.6);
-    margin-top: 30px;
-}
-
 /* social */
 #social{
-    padding: 50px 0;
+    padding: 70px 0;
 }
 #social h3{
     text-align: center;
@@ -306,7 +339,7 @@ footer{
     background-color: #00439b;
     color: white;
     padding: 80px 0;
-    font-size: 15px;
+    font-size: 14px;
 }
 footer .logo{
     width: 100px;
@@ -321,12 +354,15 @@ footer .globe{
 .country{
     margin-bottom: 50px;
 }
+footer li{
+    padding-bottom: 5px;
+}
 .footer-bottom-logo{
     margin-top: 50px;
     margin-bottom: 10px;
 }
 .footer-bottom-logo img{
-    width: 200px;
+    width: 180px;
 }
 footer .underline{
     text-decoration: underline;
@@ -344,6 +380,9 @@ footer .underline{
     #ms_jumbotron img{
         width: 350px;
     }
+    #ms_jumbotron h2{
+        font-size: 37px;
+    }
     
     /* play 5 */
     .playstation-bottom .descrizione{
@@ -353,10 +392,17 @@ footer .underline{
         width: 50%;
         padding-bottom: 15px;
     }
+    .playstation-bottom .bordo img{
+        width: 50%;
+        padding-bottom: 15px;
+    }
 
     /* takes two */
     .banner-content img{
         width: 390px;
+    }
+    #takes-two h2{
+        font-size: 40px;
     }
 
     /* ps-plus */
@@ -366,7 +412,7 @@ footer .underline{
     #ps-plus .text{
         padding-top: 35px;
         padding-bottom: 15px;
-        font-size: 15px;
+        font-size: 16px;
     }
     #ps-plus .ms_btn{
         margin-bottom: 15px;
@@ -376,14 +422,19 @@ footer .underline{
         margin-top: 15px;
     }
 
+    /* social */
+    #social h3{
+        font-size: 30px;
+    }
+
     /* ps-now */
     #ps-now{
         padding: 0;
     }
     #ps-now .text{
-        padding-top: 35px;
+        padding-top: 25px;
         padding-bottom: 15px;
-        font-size: 15px;
+        font-size: 16px;
     }
     #ps-now .ms_btn{
         margin-bottom: 15px;
@@ -392,7 +443,6 @@ footer .underline{
         width: 200px;
     }
 
-    /* social */
     .ms_row{
         width: 80%;
         margin: 0 auto;
@@ -421,6 +471,12 @@ footer .underline{
     }
 
     /* takes two */
+    #takes-two h2{
+        font-size: 35px;
+    }
+    #takes-two .text{
+        font-size: 15px;
+    }
     .banner-content{
         width: 35%;
     }
@@ -432,16 +488,25 @@ footer .underline{
     #ps-plus .logo{
         width: 300px;
     }
-
-    /* ps-now */
-    #ps-now .logo{
-        width: 300px;
+    #ps-plus .text{
+        font-size: 15px;
     }
 
     /* social */
     .ms_row{
         width: 50%;
         margin: 0 auto;
+    }
+    #social h3{
+        font-size: 26px;
+    }
+
+    /* ps-now */
+    #ps-now .logo{
+        width: 300px;
+    }
+    #ps-now .text{
+        font-size: 15px;
     }
 
     /* FOOTER */
