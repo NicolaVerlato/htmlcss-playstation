@@ -301,6 +301,37 @@ header .ms_btn{
     margin-bottom: 50px;
 }
 
+/* FOOTER */
+footer{
+    background-color: #00439b;
+    color: white;
+    padding: 80px 0;
+    font-size: 15px;
+}
+footer .logo{
+    width: 100px;
+    display: block;
+    margin-bottom: 40px;
+}
+footer .globe{
+    width: 20px;
+    display: inline;
+    margin-right: 10px;
+}
+.country{
+    margin-bottom: 50px;
+}
+.footer-bottom-logo{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.footer-bottom-logo img{
+    width: 200px;
+}
+footer .underline{
+    text-decoration: underline;
+}
+
 /* SMALL */
 @media screen and (min-width: 576px){
     #ms_jumbotron img{
@@ -411,5 +442,10 @@ header .ms_btn{
     .ms_row{
         width: 50%;
         margin: 0 auto;
+    }
+
+    /* FOOTER */
+    .footer-bottom{
+        width: 50%;
     }
 }
