@@ -360,6 +360,12 @@ header .ms_btn{
      #ps-now .logo{
         width: 200px;
     }
+
+    /* social */
+    .ms_row{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* DESKTOP */
@@ -397,8 +403,13 @@ header .ms_btn{
     }
 
     /* ps-now */
-     
     #ps-now .logo{
         width: 300px;
+    }
+
+    /* social */
+    .ms_row{
+        width: 50%;
+        margin: 0 auto;
     }
 }
