@@ -167,7 +167,6 @@ header .ms_btn:hover{
     margin-bottom: 25px;
 }
 
-
 /* games */
 #games{
     margin-top: 30px;
@@ -184,7 +183,6 @@ header .ms_btn:hover{
     transform: translateY(-10px);
     transition-duration: 0.3s;
 }
-
 
 /* play 5 */
 #playstation{
@@ -404,6 +402,7 @@ footer .underline{
 
 /* SMALL */
 @media screen and (min-width: 576px){
+    /* jumbotron */
     #ms_jumbotron img{
         width: 280px;
     }
@@ -411,6 +410,7 @@ footer .underline{
 
 /* TABLET */
 @media screen and (min-width: 768px){
+    /* jumbotron */
     #ms_jumbotron img{
         width: 350px;
     }
