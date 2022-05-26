@@ -15,32 +15,6 @@ ul{
     margin: 0;
     padding: 0;
 }
-.ms_btn{
-    line-height: 36px;
-    text-align: center;
-    border-radius: 20px;
-    display: inline-block;
-}
-.btn-black{
-    background-color: #363636;
-    color: white;
-}
-.btn-orange{
-    background-color: #cd3d10;
-    color: white;
-}
-.btn-blue{
-    background-color: #2c64e6;
-    color: white;
-}
-.btn-grey{
-    background-color: #d9dadc;
-    color: #2c64e6;
-}
-.btn-white{
-    background-color: white;
-    color: black;
-}
 a{
     text-decoration: none;
     color: inherit;
@@ -59,6 +33,35 @@ main i{
     vertical-align: text-top;
 }
 
+/* UTILITIES */
+.ms_btn{
+    line-height: 36px;
+    text-align: center;
+    border-radius: 20px;
+}
+.btn-black{
+    background-color: #363636;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.btn-orange{
+    background-color: #cd3d10;
+    color: white;
+}
+.btn-blue{
+    background-color: #2c64e6;
+    color: white;
+}
+.btn-grey{
+    background-color: #d9dadc;
+    color: #2c64e6;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+}
+
 /* HEADER */
 header{
     position: fixed;
@@ -68,7 +71,7 @@ header{
     width: 100%;
 }
 header .ms_btn{
-    width: 80px;
+    width: 72px;
 }
 /* header-top */
 .header-top{
@@ -106,6 +109,7 @@ header .ms_btn{
 }
 .header-list-left, .header-list-right{
     display: none;
+    color: grey;
 }
 .header-list-left img, 
 .header-list-right img{
@@ -117,6 +121,21 @@ header .ms_btn{
 }
 .burger i{
     font-size: 20px;
+}
+/* HOVER HEADER */
+.header-list-left a:hover,
+.header-list-right a:hover{
+    color: black;
+}
+.header-right .ms_btn a:hover{
+    color: white;
+}
+.btn-black:hover{
+    padding: 8px;
+    transition-duration: 0.1s;
+}
+header .ms_btn:hover{
+    border: 2px solid black;
 }
 
 /* MAIN */
@@ -148,6 +167,7 @@ header .ms_btn{
     margin-bottom: 25px;
 }
 
+
 /* games */
 #games{
     margin-top: 30px;
@@ -159,10 +179,17 @@ header .ms_btn{
     border: 2px solid #0070d0;
     padding: 3px;
 }
+/* hover */
+#games a img:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.3s;
+}
+
 
 /* play 5 */
 #playstation{
     margin-top: 90px;
+    margin-bottom: 40px;
 }
 .playstation-top{
     text-align: center;
@@ -171,7 +198,6 @@ header .ms_btn{
     margin-top: 70px;
 }
 .playstation-bottom{
-    margin-bottom: 40px;
     margin-top: 60px;
 }
 .playstation-center .ms_btn{
@@ -198,6 +224,11 @@ header .ms_btn{
     text-align: center;
     border-bottom: 2px solid #0070d0;
     height: 100%;
+}
+/* HOVER */
+#playstation .ms_card:hover{
+    filter: opacity(1);
+    border-bottom: 2px solid #0070d0;
 }
 
 /* takes two */
